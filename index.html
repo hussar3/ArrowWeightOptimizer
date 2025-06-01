@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arrow Weight Optimizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Arrow Weight Optimizer</h1>
+
+    <input type="file" id="csv-input" accept=".csv" />
+    <button onclick="importCSV()">Import CSV</button>
+    <button onclick="optimizeWeights()">Optimize Weights</button>
+    <button onclick="exportCSV()">Export to CSV</button>
+    <button onclick="clearTable()">Clear Table</button>
+
+    <table id="arrow-table">
+      <thead>
+        <tr>
+          <th>Arrow #</th>
+          <th>Shaft Weight (grains)</th>
+          <th>Insert Weight (grains)</th>
+          <th>Point Weight (grains)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

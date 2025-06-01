@@ -1,0 +1,19 @@
+{
+  "name": "arrow-weight-optimizer",
+  "version": "1.0.2",
+  "description": "Standalone Arrow Weight Optimizer Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+  "build": {
+       "appId": "com.arrow.weight.optimizer",
+       "productName": "Arrow Weight Optimizer",
+       "linux": {
+         "target": "AppImage"
+       }
+     }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
